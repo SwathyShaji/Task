@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const jwtSecret = process.env.JWT_SECRET || 'swathyshaji01';
 const app = express();
 app.use(cors());
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.use(express.json());
 
 // Connect to MongoDB database
